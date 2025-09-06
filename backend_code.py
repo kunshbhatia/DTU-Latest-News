@@ -38,7 +38,7 @@ def main_code(input):
                 link = i.find("h6").find("a",class_="colr")['href']
 
                 if link[0] == ".":
-                    link = "https://dtu.ac.in/"+link[1:]
+                    link = "https://dtu.ac.in"+link[1:]
                     links.append(link)
                 else:
                     links.append(link)
