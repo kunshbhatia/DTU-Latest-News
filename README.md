@@ -45,7 +45,8 @@ pip install -r requirements.txt
 
 ## 👨‍💻 Author
 
-Made with ❤️ by Kunsh Bhatia
-Feel free to fork, improve, and share!
+- Made with ❤️ by Kunsh Bhatia
+- Feel free to fork, improve, and share!
+
 
 
