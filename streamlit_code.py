@@ -6,6 +6,18 @@ from urllib.parse import quote
 logo_png = "https://we-recycle.org/wp-content/uploads/2014/03/dtu-logo.png"
 st.set_page_config(layout="wide",page_title="DTU Latest NEWS",page_icon=logo_png)
 
+hide_github_icon = """
+<style>
+#GithubIcon {
+    visibility: hidden;
+}
+.styles_viewerBadge__1yB5_, .viewerBadge_link__1S137, .viewerBadge_text__1JaDK {
+    display: none;
+}
+</style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 st.markdown(
     """
     <style>
