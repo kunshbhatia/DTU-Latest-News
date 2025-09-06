@@ -19,11 +19,11 @@ It is built with:
 ## 📂 Project Structure
 
 DTU-Latest-News/
-├── streamlit_code.py # Main Streamlit application
-├── requirements.txt # List of dependencies
-├── README.md # Project description
-├── backend_code.py # All fetching of data from the website is done here
-└── data.txt # Helps in storing data of the file fetched
+├── streamlit_code.py   # Main Streamlit application
+├── backend_code.py     # Handles fetching data from the website
+├── data.txt            # Stores raw HTML/data fetched
+├── requirements.txt    # List of dependencies
+└── README.md           # Project description
 
 ---
 
@@ -45,3 +45,4 @@ pip install -r requirements.txt
 
 Made with ❤️ by Kunsh Bhatia
 Feel free to fork, improve, and share!
+
