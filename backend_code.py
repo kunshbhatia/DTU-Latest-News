@@ -13,18 +13,20 @@ def main_code(input):
 
     soup = BeautifulSoup(data,"html.parser")
 
-    if input == "Latest News":
-        latest_tab_data = soup.find_all("div",class_="latest_tab")[0]
-    elif input == "Notices":
-        latest_tab_data = soup.find_all("div",class_="latest_tab")[1]
-    elif input == "Jobs":
-        latest_tab_data = soup.find_all("div",class_="latest_tab")[2]
-    elif input == "Tenders":
-        latest_tab_data = soup.find_all("div",class_="latest_tab")[3]
-    elif input == "Forthcoming Events":
-        latest_tab_data = soup.find_all("div",class_="latest_tab")[4]
-    elif input == "1st Year Notices":
-        latest_tab_data = soup.find_all("div",class_="latest_tab")[5]
+    various_inputs = {  "Latest News" : 0,
+                        "Notices" : 1,
+                        "Jobs" : 2,
+                        "Tenders" : 3,
+                        "Forthcoming Events" : 4,
+                        "1st Year Notices" : 5 
+                    }
+
+    for i in various_inputs.keys():
+        if input == i:
+            final_key = various_inputs[i]
+
+    latest_tab_data = soup.find_all("div",class_="latest_tab")[final_key]
+
 
     headings = []
     links = []
