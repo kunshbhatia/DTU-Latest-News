@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
-def main_code():
+def main_code(input):
     url = "https://dtu.ac.in/"
 
     with open("data.txt","wb") as f:
@@ -13,7 +13,18 @@ def main_code():
 
     soup = BeautifulSoup(data,"html.parser")
 
-    latest_tab_data = soup.find_all("div",class_="latest_tab")[0]
+    if input == "Latest News":
+        latest_tab_data = soup.find_all("div",class_="latest_tab")[0]
+    elif input == "Notices":
+        latest_tab_data = soup.find_all("div",class_="latest_tab")[1]
+    elif input == "Jobs":
+        latest_tab_data = soup.find_all("div",class_="latest_tab")[2]
+    elif input == "Tenders":
+        latest_tab_data = soup.find_all("div",class_="latest_tab")[3]
+    elif input == "Forthcoming Events":
+        latest_tab_data = soup.find_all("div",class_="latest_tab")[4]
+    elif input == "1st Year Notices":
+        latest_tab_data = soup.find_all("div",class_="latest_tab")[5]
 
     headings = []
     links = []
