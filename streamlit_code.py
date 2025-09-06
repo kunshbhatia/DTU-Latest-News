@@ -4,7 +4,6 @@ import pandas as pd
 from urllib.parse import quote
 
 logo_png = "https://we-recycle.org/wp-content/uploads/2014/03/dtu-logo.png"
-headings,links = main_code()
 st.set_page_config(layout="wide",page_title="DTU Latest NEWS",page_icon=logo_png)
 
 st.markdown(
@@ -20,7 +19,7 @@ st.markdown(
 
 st.logo(logo_png,icon_image=logo_png)
 st.header("DTU Latest NEWS")
-
+headings,links = main_code()
 headings_table = pd.DataFrame(headings)
 links_table = pd.DataFrame(links)
 
