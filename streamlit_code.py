@@ -22,7 +22,7 @@ st.header("DTU Latest NEWS")
 
 search_bar = st.text_input("Search A Notice")
 
-input = st.selectbox(label="Select The News You Have Interest" ,options=['Latest News',"Notices","Jobs","Tenders","Forthcoming Events","1st Year Notices"],placeholder="Notices")
+input = st.selectbox(label="Select The News You Have Interest" ,options=['Latest News',"Notices","Jobs","Tenders","Forthcoming Events","1st Year Notices"],index=1)
 
 facts = [
     "🏫 Delhi Technological University (DTU), originally founded as Delhi College of Engineering in 1941, is one of India's oldest engineering colleges. 🎓 Over the decades, it has transformed into a hub of innovation, research, and technical excellence.",    
