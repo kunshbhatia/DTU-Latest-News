@@ -21,10 +21,6 @@ st.logo(logo_png,icon_image=logo_png)
 st.header("DTU Latest NEWS")
 
 search_bar = st.text_input("Search A Notice")
-search_bar_set = []
-search_bar_set.append(search_bar.split())
-text = set(search_bar_set[0])
-print(search_bar_set)
 
 input = st.selectbox(label="Select The News You Have Interest" ,options=['Latest News',"Notices","Jobs","Tenders","Forthcoming Events","1st Year Notices"])
 
