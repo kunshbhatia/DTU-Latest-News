@@ -48,7 +48,7 @@ df.drop_duplicates()
 
 if search_bar:
     search_bar_set = []
-    search_bar_set.append(search_bar.split().lower())
+    search_bar_set.append(search_bar.lower().split())
     text = set(search_bar_set[0])
     req = []
     for i in df['Title'].str.lower().split():
