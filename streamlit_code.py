@@ -49,12 +49,11 @@ df.drop_duplicates()
 if search_bar:
     search_bar_set = []
     search_bar_set.append(search_bar.split())
-    search_bar_set.append(search_bar.lower().split())
+    search_bar_set.append(search_bar.split())
     text = set(search_bar_set[0])
     req = []
-    for i in df['Title'].str.split():
+    for i in df['Title'].str.split(): 
         if text.issubset(set(i)) == True:
-        if text.issubset(set(i.lower()) == True:
             i = " ".join(i)
             try:
                 req.append(headings.index(i))
