@@ -52,7 +52,7 @@ if search_bar:
     text = set(search_bar_set[0])
     req = []
     for i in df['Title'].str.lower().split():
-        if text.issubset(set(i) == True:
+        if text.issubset(set(i)) == True:
             i = " ".join(i)
             try:
                 req.append(headings.index(i))
